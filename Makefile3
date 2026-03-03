@@ -12,3 +12,6 @@ lex.yy.c: calculator2.l
 
 calculator2.tab.c: calculator2.y
 	bison -d calculator2.y
+
+clean:
+	rm -f calculator2 calculator2.tab.c calculator2.tab.h lex.yy.c *.o

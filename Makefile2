@@ -12,3 +12,6 @@ lex.yy.c: assignment2.l
 
 assignment2.tab.c: assignment2.y
 	bison -d assignment2.y
+
+clean:
+	rm -f assignment2 assignment2.tab.c assignment2.tab.h lex.yy.c *.o
